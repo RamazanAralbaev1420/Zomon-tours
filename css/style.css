@@ -139,19 +139,6 @@ a {
   transition-duration: 0.3s;
 }
 
-.home_slide1 {
-  width: 100%;
-  height: 100vh;
-  position: absolute;
-  top: 0;
-  background-image: url(../images/backHome.jpg);
-  background-repeat: no-repeat;
-  object-fit: contain;
-  background-size: 100% 100%;
-  border: 5px solid blue;
-  margin-top: 0;
-}
-
 .splide__slider,
 .splide__track,
 .splide__list {
@@ -856,7 +843,7 @@ body .options .option {
   width: 100%;
   height: 70vh;
   left: 0;
-  top: -500px;
+  top: -1000px;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
@@ -959,6 +946,15 @@ body .options .option {
   .explore_card_image img {
     width: 100%;
   }
+  .explore_card #home {
+    width: 100%;
+    height: 400px;
+    background-image: url(../images/backHome.jpg);
+    background-repeat: no-repeat;
+    object-fit: contain;
+    background-size: 100% 100%;
+    padding-top: 40px;
+  }
   .explore_card .explore_card_title_btn {
     width: 100%;
   }
@@ -974,6 +970,30 @@ body .options .option {
     display: flex;
     justify-content: center;
     text-align: center;
+  }
+  .reservation-map-top-cards {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 300px;
+  }
+  .reservation-map-top-card {
+    width: 85% !important;
+  }
+  .reservation-location {
+    margin-top: 370px;
+  }
+  .row {
+    flex-direction: column;
+  }
+  .row label,
+  .row input {
+    width: 100%;
+  }
+  .footer-top {
+    flex-direction: column;
+    gap: 20px;
   }
 }
 @media screen and (max-width: 375px) {
@@ -1028,7 +1048,4 @@ body .options .option {
   .option:nth-child(3) {
     display: none;
   }
-}
-.slr {
-  border: 1px solid red;
 }/*# sourceMappingURL=style.css.map */
