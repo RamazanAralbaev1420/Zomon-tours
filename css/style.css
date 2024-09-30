@@ -843,9 +843,11 @@ body .options .option {
 
 .cookie-consent-banner {
   position: fixed;
-  bottom: 0;
-  width: 50%;
-  background-color: rgba(0, 0, 0, 0.8);
+  bottom: 10px;
+  left: 10px;
+  width: 460px;
+  height: 150px;
+  background-color: rgba(0, 0, 0, 0.973);
   color: white;
   text-align: center;
   padding: 20px;
@@ -854,11 +856,12 @@ body .options .option {
 }
 
 .cookie-consent-banner button {
-  background-color: #67c02c;
+  background-color: #0abab5;
   border: none;
   padding: 10px 20px;
   color: white;
   cursor: pointer;
+  margin-top: 20px;
   margin-left: 20px;
 }
 
