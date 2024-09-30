@@ -1,14 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta
+      name="description"
+      content="Seyahat Rüyası - профессиональная организация бизнес-туров и туристических поездок по всему миру. Забронируйте лучшие предложения для ваших путешествий."
+    />
+    <meta
+      name="keywords"
+      content="путешествия, бизнес-туризм, туры, авиабилеты, визовая поддержка, Seyahat Rüyası, туры по Турции, международные поездки, отели, бронь"
+    />
+    <meta name="author" content="Seyahat Rüyası" />
+    <meta name="robots" content="index, follow" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <title>Seyahat Rüyası | Business Travel and Tours</title>
     <link rel="stylesheet" href="assets/css/fontawesome.css" />
     <link
-      href="
-    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
-    "
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
       rel="stylesheet"
     />
     <link
@@ -18,47 +27,54 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <div class="cookie-consent-banner" id="cookieBanner">
+      <span>
+        Bu site, kullanıcı deneyimini iyileştirmek için çerezler kullanmaktadır.
+        Kabul ediyor musunuz?
+      </span>
+      <br /><a
+        href="politic.html#Coockie"
+        style="text-decoration: underline; color: #228bef"
+        id="more_details"
+        >daha fazla ayrıntı</a
+      >
+      <button id="acceptCookies">Evet, kabul ediyorum</button>
+    </div>
     <header id="header">
       <div class="container">
         <div class="header">
           <div class="logo">
-            <a href="#"><img src="images/zamon.svg.svg" alt="" /></a>
+            <a href="#">
+              <!-- <img src="images/logo__5_-removebg-preview.png" alt="" /> -->
+              Seyahat Rüyası
+            </a>
           </div>
           <div class="desktop_menu">
             <ul class="nav_links">
               <li class="nav_item">
-                <a href="">Home</a>
+                <a href="">Ana Sayfa</a>
               </li>
               <li class="nav_item">
-                <a href="">About</a>
+                <a href="">Hakkımızda</a>
               </li>
               <li class="nav_item">
-                <a href="">Tours</a>
+                <a href="">Turlar</a>
               </li>
               <li class="nav_item">
-                <a href="">Contacts</a>
+                <a href="">İletişim</a>
               </li>
             </ul>
 
             <ul class="user_actions">
               <li class="actions_item">
-                <a href="">UZ</a>
-              </li>
-              <li class="actions_item">
-                <a href="">EN</a>
-              </li>
-              <li class="actions_item">
-                <a href="">RU</a>
-              </li>
-              <li class="actions_item">
-                <a href=""
-                  ><svg
+                <a href="">
+                  <svg
                     width="17"
                     height="17"
                     viewBox="0 0 17 17"
@@ -93,8 +109,8 @@
                 </a>
               </li>
               <li class="actions_item">
-                <a href=""
-                  ><svg
+                <a href="">
+                  <svg
                     width="17"
                     height="24"
                     viewBox="0 0 17 24"
@@ -164,29 +180,21 @@
             <div class="mobile_menu_box">
               <ul class="nav_links">
                 <li class="nav_item">
-                  <a href="">Home</a>
+                  <a href="">Ana Sayfa</a>
                 </li>
                 <li class="nav_item">
-                  <a href="">About</a>
+                  <a href="">Hakkımızda</a>
                 </li>
                 <li class="nav_item">
-                  <a href="">Tours</a>
+                  <a href="">Turlar</a>
                 </li>
                 <li class="nav_item">
-                  <a href="">Contacts</a>
+                  <a href="">İletişim</a>
                 </li>
+
                 <li class="actions_item">
-                  <a href="">UZ</a>
-                </li>
-                <li class="actions_item">
-                  <a href="">EN</a>
-                </li>
-                <li class="actions_item">
-                  <a href="">RU</a>
-                </li>
-                <li class="actions_item">
-                  <a href=""
-                    ><svg
+                  <a href="">
+                    <svg
                       width="17"
                       height="17"
                       viewBox="0 0 17 17"
@@ -221,8 +229,8 @@
                   </a>
                 </li>
                 <li class="actions_item">
-                  <a href=""
-                    ><svg
+                  <a href="">
+                    <svg
                       width="17"
                       height="24"
                       viewBox="0 0 17 24"
@@ -246,36 +254,50 @@
                       <g mask="url(#mask0_2_537)">
                         <path
                           d="M8.23247 8.53192C5.9638 8.53192 4.12714 10.3706 4.12714 12.6373C4.12714 14.9059 5.9658 16.7426 8.23247 16.7426C10.5011 16.7426 12.3378 14.9039 12.3378 12.6373C12.3378 10.3686 10.4991 8.53192 8.23247 8.53192ZM8.23247 15.3019C6.7598 15.3019 5.5678 14.1093 5.5678 12.6373C5.5678 11.1653 6.76047 9.97259 8.23247 9.97259C9.70447 9.97259 10.8971 11.1653 10.8971 12.6373C10.8978 14.1093 9.70514 15.3019 8.23247 15.3019Z"
-                          fill="black"
                         />
                         <path
                           d="M11.5287 4.69091C10.0567 4.62224 6.41067 4.62557 4.93734 4.69091C3.64267 4.75157 2.50067 5.06424 1.58001 5.9849C0.0413432 7.52357 0.23801 9.5969 0.23801 12.6376C0.23801 15.7496 0.0646766 17.7749 1.58001 19.2903C3.12467 20.8343 5.22801 20.6323 8.23269 20.6323C11.3154 20.6323 12.3794 20.6343 13.4694 20.2123C14.9514 19.6369 16.07 18.3123 16.1794 15.9329C16.2487 14.4603 16.2447 10.8149 16.1794 9.34157C16.0474 6.5329 14.54 4.82957 11.5287 4.69091ZM13.8587 18.2723C12.85 19.2809 11.4507 19.1909 8.21336 19.1909C4.88001 19.1909 3.54334 19.2403 2.56801 18.2623C1.44467 17.1443 1.64801 15.3489 1.64801 12.6269C1.64801 8.94357 1.27001 6.2909 4.96667 6.10157C5.81601 6.07157 6.06601 6.06157 8.20402 6.06157L8.23402 6.08157C11.7867 6.08157 14.574 5.70957 14.7414 9.40557C14.7794 10.2489 14.788 10.5022 14.788 12.6369C14.7874 15.9316 14.85 17.2763 13.8587 18.2723Z"
-                          fill="black"
                         />
                         <path
                           d="M12.5007 9.32949C13.0306 9.32949 13.46 8.89999 13.46 8.37016C13.46 7.84033 13.0306 7.41083 12.5007 7.41083C11.9709 7.41083 11.5414 7.84033 11.5414 8.37016C11.5414 8.89999 11.9709 9.32949 12.5007 9.32949Z"
-                          fill="black"
                         />
                       </g>
                     </svg>
                   </a>
                 </li>
               </ul>
-
-              <!-- <ul class="user_actions"></ul> -->
             </div>
           </div>
         </div>
       </div>
     </header>
+    <div id="accept_mobile_container">
+      <div class="accept">
+        <div class="accept_title">
+          <h2>18 yaşında mısın?</h2>
+        </div>
+      </div>
+      <div class="accept_btns">
+        <div class="accept_btn default_btn no_btn_accept">
+          <a href="https://" id="mobile_content_no" class="mobile_content_btn"
+            >Hayir</a
+          >
+        </div>
+        <div class="accept_btn default_btn yes_btn_accept">
+          <a href="https://" id="mobile_content_yes" class="mobile_content_btn"
+            >Evet</a
+          >
+        </div>
+      </div>
+    </div>
 
     <main id="home">
       <div class="container">
         <div class="home_inner">
           <div class="home_inner_title">
-            <h4>Take a Glimpse Into The Beautiful City Of:</h4>
-            <h2>Istanbul</h2>
-            <a href="" class="default_btn">Go there </a>
+            <h4>Güzel Şehrin Keyfine Göz Atın:</h4>
+            <h2>İstanbul</h2>
+            <a href="#form" class="default_btn">Keşfet</a>
           </div>
 
           <div class="home_inner_info">
@@ -284,8 +306,8 @@
                 <img src="images/home_symbol1.svg" alt="" />
               </div>
               <div class="home_inner_info_item_numbers">
-                <div class="home_inner_info_item_numbers_name">Population</div>
-                <div class="home_inner_info_item_numbers_date">44.48 M</div>
+                <div class="home_inner_info_item_numbers_name">Nüfus</div>
+                <div class="home_inner_info_item_numbers_date">53.52 M</div>
               </div>
             </div>
             <div class="home_inner_info_item">
@@ -293,8 +315,8 @@
                 <img src="images/home_symbol2.svg" alt="" />
               </div>
               <div class="home_inner_info_item_numbers">
-                <div class="home_inner_info_item_numbers_name">Population</div>
-                <div class="home_inner_info_item_numbers_date">44.48 M</div>
+                <div class="home_inner_info_item_numbers_name">Nüfus</div>
+                <div class="home_inner_info_item_numbers_date">44.42 M</div>
               </div>
             </div>
             <div class="home_inner_info_item">
@@ -302,12 +324,12 @@
                 <img src="images/home_symbol3.svg" alt="" />
               </div>
               <div class="home_inner_info_item_numbers">
-                <div class="home_inner_info_item_numbers_name">Population</div>
-                <div class="home_inner_info_item_numbers_date">44.48 M</div>
+                <div class="home_inner_info_item_numbers_name">Nüfus</div>
+                <div class="home_inner_info_item_numbers_date">34.63 M</div>
               </div>
             </div>
             <div class="home_btn">
-              <a href="" class="default_btn">Explorer more</a>
+              <a href="#form" class="default_btn">Daha fazla keşfet</a>
             </div>
           </div>
         </div>
@@ -319,13 +341,12 @@
         <div class="slider_contents">
           <div class="slider_contents_top">
             <div class="slider_contents_top_title">
-              <h3>Best Weekly Offers In Each City</h3>
+              <h3>Her Şehirdeki En İyi Haftalık Teklifler</h3>
             </div>
             <div class="slider_contents_top_description">
               <p>
-                Discover the best weekly offers in each city, curated just for
-                you. Immerse yourself in a world of savings and indulge in
-                unparalleled experiences.
+                Her şehirdeki en iyi haftalık teklifleri keşfedin. Kendinizi
+                benzersiz deneyimlerle dolu bir dünyaya bırakın.
               </p>
             </div>
           </div>
@@ -351,100 +372,90 @@
                     <div class="splide__slide_text">
                       <div class="top-info">
                         <h4>
-                          <b> Istanbul</b><br />
+                          <b> İstanbul</b><br />
                           <span>
-                            <img src="images/pupills.svg" alt="" /> 234 Check
-                            Ins</span
-                          >
+                            <img src="images/pupills.svg" alt="" /> 234 Kayıt
+                          </span>
                         </h4>
-                        <h6>$420<br /><span>/person</span></h6>
+                        <h6>420$<br /><span>/kişi</span></h6>
                       </div>
                       <div class="line-dec"></div>
                       <ul class="card-hotel">
-                        <li class="first">Deal Includes:</li>
+                        <li class="first">Teklif Şunları İçerir:</li>
                         <li>
-                          <img src="images/taxi.svg" alt="" /> Best Prices
+                          <img src="images/taxi.svg" alt="" /> En İyi Fiyatlar
                         </li>
                         <li>
-                          <img src="images/plane.svg" alt="" /> Short Processing
-                          Time
+                          <img src="images/plane.svg" alt="" /> Kısa İşlem
+                          Süresi
                         </li>
                         <li>
-                          <img src="images/hotel.svg" alt="" /> Trustworthy
-                          Assistance
+                          <img src="images/hotel.svg" alt="" /> Güvenilir Yardım
                         </li>
                       </ul>
                       <div class="main-button">
-                        <a href="#contact" class="default_btn"
-                          >Make a Reservation</a
-                        >
+                        <a href="#form" class="default_btn">Rezervasyon Yap</a>
                       </div>
                     </div>
                   </div>
                 </li>
                 <li class="splide__slide">
-                  <img src="images/offers-02.jpg" alt="" />
+                  <img src="images/dubai-new.webp" alt="" />
                   <div class="splide__slide_text">
                     <div class="top-info">
                       <h4>
                         <b> Dubai</b><br />
                         <span>
-                          <img src="images/pupills.svg" alt="" /> 300 Check
-                          Ins</span
-                        >
+                          <img src="images/pupills.svg" alt="" /> 300 Kayıt
+                        </span>
                       </h4>
-                      <h6>$700<br /><span>/person</span></h6>
+                      <h6>700$<br /><span>/kişi</span></h6>
                     </div>
                     <div class="line-dec"></div>
                     <ul class="card-hotel">
-                      <li class="first">Deal Includes:</li>
-                      <li><img src="images/taxi.svg" alt="" /> Best Prices</li>
+                      <li class="first">Teklif Şunları İçerir:</li>
                       <li>
-                        <img src="images/plane.svg" alt="" /> Short Processing
-                        Time
+                        <img src="images/taxi.svg" alt="" /> En İyi Fiyatlar
                       </li>
                       <li>
-                        <img src="images/hotel.svg" alt="" /> Trustworthy
-                        Assistance
+                        <img src="images/plane.svg" alt="" /> Kısa İşlem Süresi
+                      </li>
+                      <li>
+                        <img src="images/hotel.svg" alt="" /> Güvenilir Yardım
                       </li>
                     </ul>
                     <div class="main-button">
-                      <a href="#contact" class="default_btn"
-                        >Make a Reservation</a
-                      >
+                      <a href="#form" class="default_btn">Rezervasyon Yap</a>
                     </div>
                   </div>
                 </li>
                 <li class="splide__slide">
-                  <img src="images/deals-01.jpg" alt="" />
+                  <img src="images/antalya-new.webp" alt="" />
                   <div class="splide__slide_text">
                     <div class="top-info">
                       <h4>
                         <b> Antalya</b><br />
                         <span>
-                          <img src="images/pupills.svg" alt="" /> 500 Check
-                          Ins</span
-                        >
+                          <img src="images/pupills.svg" alt="" /> 500 Kayıt
+                        </span>
                       </h4>
-                      <h6>$999<br /><span>/person</span></h6>
+                      <h6>999$<br /><span>/kişi</span></h6>
                     </div>
                     <div class="line-dec"></div>
                     <ul class="card-hotel">
-                      <li class="first">Deal Includes:</li>
-                      <li><img src="images/taxi.svg" alt="" /> Best Prices</li>
+                      <li class="first">Teklif Şunları İçerir:</li>
                       <li>
-                        <img src="images/plane.svg" alt="" /> Short Processing
-                        Time
+                        <img src="images/taxi.svg" alt="" /> En İyi Fiyatlar
                       </li>
                       <li>
-                        <img src="images/hotel.svg" alt="" /> Trustworthy
-                        Assistance
+                        <img src="images/plane.svg" alt="" /> Kısa İşlem Süresi
+                      </li>
+                      <li>
+                        <img src="images/hotel.svg" alt="" /> Güvenilir Yardım
                       </li>
                     </ul>
                     <div class="main-button">
-                      <a href="#contact" class="default_btn"
-                        >Make a Reservation</a
-                      >
+                      <a href="#form" class="default_btn">Rezervasyon Yap</a>
                     </div>
                   </div>
                 </li>
@@ -453,130 +464,118 @@
                   <div class="splide__slide_text">
                     <div class="top-info">
                       <h4>
-                        <b>Sharm El-Sheikh</b><br />
+                        <b>Sharm El-Şeyh</b><br />
                         <span>
-                          <img src="images/pupills.svg" alt="" /> 200 Check
-                          Ins</span
-                        >
+                          <img src="images/pupills.svg" alt="" /> 200 Kayıt
+                        </span>
                       </h4>
-                      <h6>$800<br /><span>/person</span></h6>
+                      <h6>800$<br /><span>/kişi</span></h6>
                     </div>
                     <div class="line-dec"></div>
                     <ul class="card-hotel">
-                      <li class="first">Deal Includes:</li>
-                      <li><img src="images/taxi.svg" alt="" /> Best Prices</li>
+                      <li class="first">Teklif Şunları İçerir:</li>
                       <li>
-                        <img src="images/plane.svg" alt="" /> Short Processing
-                        Time
+                        <img src="images/taxi.svg" alt="" /> En İyi Fiyatlar
                       </li>
                       <li>
-                        <img src="images/hotel.svg" alt="" /> Trustworthy
-                        Assistance
+                        <img src="images/plane.svg" alt="" /> Kısa İşlem Süresi
+                      </li>
+                      <li>
+                        <img src="images/hotel.svg" alt="" /> Güvenilir Yardım
                       </li>
                     </ul>
                     <div class="main-button">
-                      <a href="#contact" class="default_btn"
-                        >Make a Reservation</a
-                      >
+                      <a href="#form" class="default_btn">Rezervasyon Yap</a>
                     </div>
                   </div>
                 </li>
                 <li class="splide__slide">
-                  <img src="images/usa1.jpg" alt="" />
+                  <img src="images/usa-new.webp" alt="" />
                   <div class="splide__slide_text">
                     <div class="top-info">
                       <h4>
                         <b>USA</b><br />
                         <span>
-                          <img src="images/pupills.svg" alt="" /> 400 Check
-                          Ins</span
-                        >
+                          <img src="images/pupills.svg" alt="" /> 400 Kayıt
+                        </span>
                       </h4>
-                      <h6>$720<br /><span>/person</span></h6>
+                      <h6>720$<br /><span>/kişi</span></h6>
                     </div>
                     <div class="line-dec"></div>
                     <ul class="card-hotel">
-                      <li class="first">Deal Includes:</li>
-                      <li><img src="images/taxi.svg" alt="" /> Best Prices</li>
+                      <li class="first">Teklif Şunları İçerir:</li>
                       <li>
-                        <img src="images/plane.svg" alt="" /> Short Processing
-                        Time
+                        <img src="images/taxi.svg" alt="" /> En İyi Fiyatlar
                       </li>
                       <li>
-                        <img src="images/hotel.svg" alt="" /> Trustworthy
-                        Assistance
+                        <img src="images/plane.svg" alt="" /> Kısa İşlem Süresi
+                      </li>
+                      <li>
+                        <img src="images/hotel.svg" alt="" /> Güvenilir Yardım
                       </li>
                     </ul>
                     <div class="main-button">
-                      <a href="#contact" class="default_btn"
-                        >Make a Reservation</a
-                      >
+                      <a href="#form" class="default_btn">Rezervasyon Yap</a>
                     </div>
                   </div>
                 </li>
                 <li class="splide__slide">
-                  <img src="images/deals-02.jpg" alt="" />
+                  <img src="images/england-new.jpg" alt="" />
                   <div class="splide__slide_text">
                     <div class="top-info">
                       <h4>
-                        <b>England</b><br />
+                        <b>İngiltere</b><br />
                         <span>
-                          <img src="images/pupills.svg" alt="" /> 400 Check
-                          Ins</span
-                        >
+                          <img src="images/pupills.svg" alt="" /> 400 Kayıt
+                        </span>
                       </h4>
-                      <h6>$840<br /><span>/person</span></h6>
+                      <h6>840$<br /><span>/kişi</span></h6>
                     </div>
                     <div class="line-dec"></div>
                     <ul class="card-hotel">
-                      <li class="first">Deal Includes:</li>
-                      <li><img src="images/taxi.svg" alt="" /> Best Prices</li>
+                      <li class="first">Teklif Şunları İçerir:</li>
                       <li>
-                        <img src="images/plane.svg" alt="" /> Short Processing
-                        Time
+                        <img src="images/taxi.svg" alt="" /> En İyi Fiyatlar
                       </li>
                       <li>
-                        <img src="images/hotel.svg" alt="" /> Trustworthy
-                        Assistance
+                        <img src="images/plane.svg" alt="" /> Kısa İşlem Süresi
+                      </li>
+                      <li>
+                        <img src="images/hotel.svg" alt="" /> Güvenilir Yardım
                       </li>
                     </ul>
                     <div class="main-button">
-                      <a href="#contact" class="default_btn"
-                        >Make a Reservation</a
-                      >
+                      <a href="#form" class="default_btn">Rezervasyon Yap</a>
                     </div>
                   </div>
                 </li>
                 <li class="splide__slide">
-                  <img src="images/cand.jpg" alt="" />
+                  <img src="images/canada-new.jpg" alt="" />
                   <div class="splide__slide_text">
                     <div class="top-info">
                       <h4>
-                        <b>Canada</b><br />
+                        <b>Kanada</b><br />
                         <span>
-                          <img src="images/pupills.svg" alt="" /> 345 Check
-                          Ins</span
-                        >
+                          <img src="images/pupills.svg" alt="" /> 345 Kayıt
+                        </span>
                       </h4>
-                      <h6>$800<br /><span>/person</span></h6>
+                      <h6>800$<br /><span>/kişi</span></h6>
                     </div>
                     <div class="line-dec"></div>
                     <ul class="card-hotel">
-                      <li class="first">Deal Includes:</li>
-                      <li><img src="images/taxi.svg" alt="" /> Best Prices</li>
+                      <li class="first">Teklif Şunları İçerir:</li>
                       <li>
-                        <img src="images/plane.svg" alt="" /> Short Processing
-                        Time
+                        <img src="images/taxi.svg" alt="" /> En İyi Fiyatlar
                       </li>
                       <li>
-                        <img src="images/hotel.svg" alt="" /> Trustworthy
-                        Assistance
+                        <img src="images/plane.svg" alt="" /> Kısa İşlem Süresi
+                      </li>
+                      <li>
+                        <img src="images/hotel.svg" alt="" /> Güvenilir Yardım
                       </li>
                     </ul>
                     <div class="main-button">
-                      <a href="#contact" class="default_btn"
-                        >Make a Reservation</a
-                      >
+                      <a href="#form" class="default_btn">Rezervasyon Yap</a>
                     </div>
                   </div>
                 </li>
@@ -585,31 +584,28 @@
                   <div class="splide__slide_text">
                     <div class="top-info">
                       <h4>
-                        <b>European Union</b><br />
+                        <b>Avrupa Birliği</b><br />
                         <span>
-                          <img src="images/pupills.svg" alt="" /> 345 Check
-                          Ins</span
-                        >
+                          <img src="images/pupills.svg" alt="" /> 345 Kayıt
+                        </span>
                       </h4>
-                      <h6>$810<br /><span>/person</span></h6>
+                      <h6>810$<br /><span>/kişi</span></h6>
                     </div>
                     <div class="line-dec"></div>
                     <ul class="card-hotel">
-                      <li class="first">Deal Includes:</li>
-                      <li><img src="images/taxi.svg" alt="" /> Best Prices</li>
+                      <li class="first">Teklif Şunları İçerir:</li>
                       <li>
-                        <img src="images/plane.svg" alt="" /> Short Processing
-                        Time
+                        <img src="images/taxi.svg" alt="" /> En İyi Fiyatlar
                       </li>
                       <li>
-                        <img src="images/hotel.svg" alt="" /> Trustworthy
-                        Assistance
+                        <img src="images/plane.svg" alt="" /> Kısa İşlem Süresi
+                      </li>
+                      <li>
+                        <img src="images/hotel.svg" alt="" /> Güvenilir Yardım
                       </li>
                     </ul>
                     <div class="main-button">
-                      <a href="#contact" class="default_btn"
-                        >Make a Reservation</a
-                      >
+                      <a href="#form" class="default_btn">Rezervasyon Yap</a>
                     </div>
                   </div>
                 </li>
@@ -625,13 +621,13 @@
         <div class="slider_contents">
           <div class="slider_contents_top">
             <div class="slider_contents_top_title">
-              <h3>Visa support</h3>
+              <h3>Vize Destek Hizmetleri</h3>
             </div>
             <div class="slider_contents_top_description">
               <p>
-                Experience stress-free travel with our expert visa support. We
-                provide seamless assistance and comprehensive guidance, ensuring
-                a smooth journey.
+                Kolay ve sorunsuz bir seyahat deneyimi için uzman vize desteği
+                sunuyoruz. Rahat yolculuklar için size kapsamlı yardım
+                sağlıyoruz.
               </p>
             </div>
           </div>
@@ -657,34 +653,30 @@
                     <div class="splide__slide_text">
                       <div class="top-info">
                         <h4>
-                          <b>Saudi Arabia</b><br />
+                          <b>Suudi Arabistan</b><br />
                           <span>
-                            <img src="images/pupills.svg" alt="" /> 234 Check
-                            Ins</span
-                          >
+                            <img src="images/pupills.svg" alt="" /> 234 Kayıt
+                          </span>
                         </h4>
                       </div>
                       <div class="line-dec"></div>
                       <ul class="card-hotel">
                         <li class="second">
-                          Benefits of our Visa Support service:
+                          Vize Destek Hizmetimizin Faydaları:
                         </li>
                         <li>
-                          <img src="images/taxi.svg" alt="" /> Best Prices
+                          <img src="images/taxi.svg" alt="" /> En İyi Fiyatlar
                         </li>
                         <li>
-                          <img src="images/plane.svg" alt="" /> Short Processing
-                          Time
+                          <img src="images/plane.svg" alt="" /> Kısa İşlem
+                          Süresi
                         </li>
                         <li>
-                          <img src="images/hotel.svg" alt="" /> Trustworthy
-                          Assistance
+                          <img src="images/hotel.svg" alt="" /> Güvenilir Yardım
                         </li>
                       </ul>
                       <div class="main-button">
-                        <a href="#contact" class="default_btn"
-                          >Make a Reservation</a
-                        >
+                        <a href="#form" class="default_btn">Rezervasyon Yap</a>
                       </div>
                     </div>
                   </div>
@@ -694,32 +686,29 @@
                   <div class="splide__slide_text">
                     <div class="top-info">
                       <h4>
-                        <b>Omon</b><br />
+                        <b>Umman</b><br />
                         <span>
-                          <img src="images/pupills.svg" alt="" /> 234 Check
-                          Ins</span
-                        >
+                          <img src="images/pupills.svg" alt="" /> 234 Kayıt
+                        </span>
                       </h4>
                     </div>
                     <div class="line-dec"></div>
                     <ul class="card-hotel">
                       <li class="second">
-                        Benefits of our Visa Support service:
-                      </li>
-                      <li><img src="images/taxi.svg" alt="" /> Best Prices</li>
-                      <li>
-                        <img src="images/plane.svg" alt="" /> Short Processing
-                        Time
+                        Vize Destek Hizmetimizin Faydaları:
                       </li>
                       <li>
-                        <img src="images/hotel.svg" alt="" /> Trustworthy
-                        Assistance
+                        <img src="images/taxi.svg" alt="" /> En İyi Fiyatlar
+                      </li>
+                      <li>
+                        <img src="images/plane.svg" alt="" /> Kısa İşlem Süresi
+                      </li>
+                      <li>
+                        <img src="images/hotel.svg" alt="" /> Güvenilir Yardım
                       </li>
                     </ul>
                     <div class="main-button">
-                      <a href="#contact" class="default_btn"
-                        >Make a Reservation</a
-                      >
+                      <a href="#form" class="default_btn">Rezervasyon Yap</a>
                     </div>
                   </div>
                 </li>
@@ -729,32 +718,29 @@
                   <div class="splide__slide_text">
                     <div class="top-info">
                       <h4>
-                        <b>China</b><br />
+                        <b>Çin</b><br />
                         <span>
-                          <img src="images/pupills.svg" alt="" /> 234 Check
-                          Ins</span
-                        >
+                          <img src="images/pupills.svg" alt="" /> 234 Kayıt
+                        </span>
                       </h4>
                     </div>
                     <div class="line-dec"></div>
                     <ul class="card-hotel">
                       <li class="second">
-                        Benefits of our Visa Support service:
-                      </li>
-                      <li><img src="images/taxi.svg" alt="" /> Best Prices</li>
-                      <li>
-                        <img src="images/plane.svg" alt="" /> Short Processing
-                        Time
+                        Vize Destek Hizmetimizin Faydaları:
                       </li>
                       <li>
-                        <img src="images/hotel.svg" alt="" /> Trustworthy
-                        Assistance
+                        <img src="images/taxi.svg" alt="" /> En İyi Fiyatlar
+                      </li>
+                      <li>
+                        <img src="images/plane.svg" alt="" /> Kısa İşlem Süresi
+                      </li>
+                      <li>
+                        <img src="images/hotel.svg" alt="" /> Güvenilir Yardım
                       </li>
                     </ul>
                     <div class="main-button">
-                      <a href="#contact" class="default_btn"
-                        >Make a Reservation</a
-                      >
+                      <a href="#form" class="default_btn">Rezervasyon Yap</a>
                     </div>
                   </div>
                 </li>
@@ -764,32 +750,29 @@
                   <div class="splide__slide_text">
                     <div class="top-info">
                       <h4>
-                        <b>Hong Kong </b><br />
+                        <b>Hong Kong</b><br />
                         <span>
-                          <img src="images/pupills.svg" alt="" /> 234 Check
-                          Ins</span
-                        >
+                          <img src="images/pupills.svg" alt="" /> 234 Kayıt
+                        </span>
                       </h4>
                     </div>
                     <div class="line-dec"></div>
                     <ul class="card-hotel">
                       <li class="second">
-                        Benefits of our Visa Support service:
-                      </li>
-                      <li><img src="images/taxi.svg" alt="" /> Best Prices</li>
-                      <li>
-                        <img src="images/plane.svg" alt="" /> Short Processing
-                        Time
+                        Vize Destek Hizmetimizin Faydaları:
                       </li>
                       <li>
-                        <img src="images/hotel.svg" alt="" /> Trustworthy
-                        Assistance
+                        <img src="images/taxi.svg" alt="" /> En İyi Fiyatlar
+                      </li>
+                      <li>
+                        <img src="images/plane.svg" alt="" /> Kısa İşlem Süresi
+                      </li>
+                      <li>
+                        <img src="images/hotel.svg" alt="" /> Güvenilir Yardım
                       </li>
                     </ul>
                     <div class="main-button">
-                      <a href="#contact" class="default_btn"
-                        >Make a Reservation</a
-                      >
+                      <a href="#form" class="default_btn">Rezervasyon Yap</a>
                     </div>
                   </div>
                 </li>
@@ -799,32 +782,29 @@
                   <div class="splide__slide_text">
                     <div class="top-info">
                       <h4>
-                        <b>European</b><br />
+                        <b>Avrupa</b><br />
                         <span>
-                          <img src="images/pupills.svg" alt="" /> 234 Check
-                          Ins</span
-                        >
+                          <img src="images/pupills.svg" alt="" /> 234 Kayıt
+                        </span>
                       </h4>
                     </div>
                     <div class="line-dec"></div>
                     <ul class="card-hotel">
                       <li class="second">
-                        Benefits of our Visa Support service:
-                      </li>
-                      <li><img src="images/taxi.svg" alt="" /> Best Prices</li>
-                      <li>
-                        <img src="images/plane.svg" alt="" /> Short Processing
-                        Time
+                        Vize Destek Hizmetimizin Faydaları:
                       </li>
                       <li>
-                        <img src="images/hotel.svg" alt="" /> Trustworthy
-                        Assistance
+                        <img src="images/taxi.svg" alt="" /> En İyi Fiyatlar
+                      </li>
+                      <li>
+                        <img src="images/plane.svg" alt="" /> Kısa İşlem Süresi
+                      </li>
+                      <li>
+                        <img src="images/hotel.svg" alt="" /> Güvenilir Yardım
                       </li>
                     </ul>
                     <div class="main-button">
-                      <a href="#contact" class="default_btn"
-                        >Make a Reservation</a
-                      >
+                      <a href="#form" class="default_btn">Rezervasyon Yap</a>
                     </div>
                   </div>
                 </li>
@@ -833,32 +813,29 @@
                   <div class="splide__slide_text">
                     <div class="top-info">
                       <h4>
-                        <b>India</b><br />
+                        <b>Hindistan</b><br />
                         <span>
-                          <img src="images/pupills.svg" alt="" /> 234 Check
-                          Ins</span
-                        >
+                          <img src="images/pupills.svg" alt="" /> 234 Kayıt
+                        </span>
                       </h4>
                     </div>
                     <div class="line-dec"></div>
                     <ul class="card-hotel">
                       <li class="second">
-                        Benefits of our Visa Support service:
-                      </li>
-                      <li><img src="images/taxi.svg" alt="" /> Best Prices</li>
-                      <li>
-                        <img src="images/plane.svg" alt="" /> Short Processing
-                        Time
+                        Vize Destek Hizmetimizin Faydaları:
                       </li>
                       <li>
-                        <img src="images/hotel.svg" alt="" /> Trustworthy
-                        Assistance
+                        <img src="images/taxi.svg" alt="" /> En İyi Fiyatlar
+                      </li>
+                      <li>
+                        <img src="images/plane.svg" alt="" /> Kısa İşlem Süresi
+                      </li>
+                      <li>
+                        <img src="images/hotel.svg" alt="" /> Güvenilir Yardım
                       </li>
                     </ul>
                     <div class="main-button">
-                      <a href="#contact" class="default_btn"
-                        >Make a Reservation</a
-                      >
+                      <a href="#form" class="default_btn">Rezervasyon Yap</a>
                     </div>
                   </div>
                 </li>
@@ -867,32 +844,29 @@
                   <div class="splide__slide_text">
                     <div class="top-info">
                       <h4>
-                        <b>Japan</b><br />
+                        <b>Japonya</b><br />
                         <span>
-                          <img src="images/pupills.svg" alt="" /> 234 Check
-                          Ins</span
-                        >
+                          <img src="images/pupills.svg" alt="" /> 234 Kayıt
+                        </span>
                       </h4>
                     </div>
                     <div class="line-dec"></div>
                     <ul class="card-hotel">
                       <li class="second">
-                        Benefits of our Visa Support service:
-                      </li>
-                      <li><img src="images/taxi.svg" alt="" /> Best Prices</li>
-                      <li>
-                        <img src="images/plane.svg" alt="" /> Short Processing
-                        Time
+                        Vize Destek Hizmetimizin Faydaları:
                       </li>
                       <li>
-                        <img src="images/hotel.svg" alt="" /> Trustworthy
-                        Assistance
+                        <img src="images/taxi.svg" alt="" /> En İyi Fiyatlar
+                      </li>
+                      <li>
+                        <img src="images/plane.svg" alt="" /> Kısa İşlem Süresi
+                      </li>
+                      <li>
+                        <img src="images/hotel.svg" alt="" /> Güvenilir Yardım
                       </li>
                     </ul>
                     <div class="main-button">
-                      <a href="#contact" class="default_btn"
-                        >Make a Reservation</a
-                      >
+                      <a href="#form" class="default_btn">Rezervasyon Yap</a>
                     </div>
                   </div>
                 </li>
@@ -908,39 +882,37 @@
         <div class="explore_info">
           <div class="explore_title">
             <div class="explore_title_h1">
-              <h2>Explore Destinations with Ease</h2>
+              <h2>Kolayca Şehirleri Keşfet</h2>
             </div>
             <div class="explore_title_h1_description">
               <p>
-                Find the best deals on railway and airplane tickets in each
-                city, carefully selected for you.
+                Her şehirdeki en uygun demiryolu ve uçak biletlerini sizin için
+                özenle seçtik.
               </p>
             </div>
           </div>
           <div class="explore_cards">
             <div class="explore_card">
               <div class="explore_card_image">
-                <img src="images/card1.jpg" alt="" />
+                <img src="images/railway.webp" alt="" />
               </div>
               <div class="explore_card_title_btn">
                 <div class="explore_card_top">
                   <div class="explore_card_title_btn_tit">
-                    <h3>Cheap Railway Tickets With Us</h3>
-                    <p>Whole world</p>
+                    <h3>Bizimle Uygun Fiyatlı Tren Biletleri</h3>
+                    <p>Dünya Genelinde</p>
                   </div>
                   <div class="explore_card_title_btn_btn">
-                    <a href="" class="default_btn">Explore more</a>
+                    <a href="#form" class="default_btn">Daha Fazla Keşfet</a>
                   </div>
                 </div>
                 <div class="explore_card_middle">
                   <div class="explore_card_description">
                     <p>
-                      Embark on a railway adventure and explore destinations
-                      worldwide. Whether it's the picturesque landscapes,
-                      bustling cities, or cultural gems, our rail services offer
-                      a unique and comfortable way to traverse the globe.
-                      Immerse yourself in the beauty of different cultures, all
-                      accessible through our extensive railway network. .
+                      Tren yolculuğuna çıkın ve dünya genelinde yerleri
+                      keşfedin. İster büyüleyici doğa manzaraları, ister canlı
+                      şehirler, ister kültürel hazineler olsun, demiryolu
+                      hizmetlerimiz size konforlu bir seyahat sunar.
                     </p>
                   </div>
                 </div>
@@ -948,27 +920,26 @@
             </div>
             <div class="explore_card">
               <div class="explore_card_image">
-                <img src="images/card2.jpg" alt="" />
+                <img src="images/airlane-new.jpg" alt="" />
               </div>
               <div class="explore_card_title_btn">
                 <div class="explore_card_top">
                   <div class="explore_card_title_btn_tit">
-                    <h3>Istanbul</h3>
-                    <p>Turkey</p>
+                    <h3>İstanbul</h3>
+                    <p>Türkiye</p>
                   </div>
                   <div class="explore_card_title_btn_btn">
-                    <a href="" class="default_btn">Explore more</a>
+                    <a href="#form" class="default_btn">Daha Fazla Keşfet</a>
                   </div>
                 </div>
                 <div class="explore_card_middle">
                   <div class="explore_card_description">
                     <p>
-                      Istanbul is the most populous city in Turkey and its
-                      cultural, economic and historic center. It is located in
-                      north-western part of Turkey, divided into European and
-                      Asian side by Bosphorus, which connects the Sea of Marmara
-                      and Black Sea. It is the only city in the world that sits
-                      on two continents.
+                      İstanbul, Türkiye'nin en kalabalık şehri ve kültürel,
+                      ekonomik, tarihi merkezidir. Şehir, kuzey-batı Türkiye’de
+                      Marmara Denizi ile Karadeniz’i bağlayan Boğaz ile Avrupa
+                      ve Asya kıtalarını ayırır. İstanbul, iki kıtada yer alan
+                      tek şehir olarak bilinmektedir.
                     </p>
                   </div>
                 </div>
@@ -984,46 +955,46 @@
         <div class="explore_info">
           <div class="explore_title">
             <div class="explore_title_h1">
-              <h2>Explore Destinations with Ease</h2>
+              <h2>Kolayca Şehirleri Keşfet</h2>
             </div>
             <div class="explore_title_h1_description">
               <p>
-                Find the best deals on railway and airplane tickets in each
-                city, carefully selected for you.
+                Her şehirdeki en uygun demiryolu ve uçak biletlerini sizin için
+                özenle seçtik.
               </p>
             </div>
           </div>
           <div class="explore_cards">
             <div class="explore_card">
               <div class="explore_card_image">
-                <img src="images/dubai2.jpg.jpg" alt="" />
+                <img src="images/dubai-new2.jpg" alt="" />
               </div>
               <div class="visit_card_title_btn">
                 <div class="explore_card_top">
                   <div class="explore_card_title_btn_tit">
                     <h3>Dubai</h3>
-                    <p>United Arab Emirated</p>
+                    <p>Birleşik Arap Emirlikleri</p>
                   </div>
                   <div class="explore_card_title_btn_btn">
-                    <a href="" class="default_btn">Explore more</a>
+                    <a href="#form" class="default_btn">Daha Fazla Keşfet</a>
                   </div>
                 </div>
                 <div class="explore_card_middle">
                   <div class="explore_card_description">
                     <p>
-                      Dubai is a city and emirate in the United Arab Emirates
-                      known for luxury shopping, ultramodern architecture and a
-                      lively nightlife scene. Burj Khalifa, an 830m-tall tower,
-                      dominates the skyscraper-filled skyline. At its foot lies
-                      Dubai Fountain, with jets and lights choreographed to
-                      music. On artificial islands just offshore is Atlantis,
-                      The Palm, a resort with water and marine-animal parks.
+                      Dubai, Birleşik Arap Emirlikleri'nde bir şehir ve emirlik
+                      olup, lüks alışveriş, modern mimari ve hareketli gece
+                      hayatı ile tanınır. Şehirde Burj Khalifa, 830 metre
+                      yüksekliğindeki kulesi ile dikkat çeker. Denizdeki yapay
+                      adalarda bulunan Atlantis, The Palm su ve deniz hayvanı
+                      parkları ile meşhurdur.
                     </p>
                   </div>
                 </div>
                 <div class="explore_card_bottom">
                   <span
-                    ><img src="images/human.svg" alt="" /> 8.66 Mil People</span
+                    ><img src="images/human.svg" alt="" /> 8.66 Milyon
+                    İnsan</span
                   >
                   <span><img src="images/planet.svg" alt="" /> 41.290 km2</span>
                   <span><img src="images/home.svg" alt="" /> $1.100.200</span>
@@ -1032,35 +1003,34 @@
             </div>
             <div class="explore_card">
               <div class="explore_card_image">
-                <img src="images/antaliya.png" alt="" />
+                <img src="images/antalya-new2.webp" alt="" />
               </div>
               <div class="explore_card_title_btn">
                 <div class="explore_card_top">
                   <div class="explore_card_title_btn_tit">
                     <h3>Antalya</h3>
-                    <p>Turkey</p>
+                    <p>Türkiye</p>
                   </div>
                   <div class="explore_card_title_btn_btn">
-                    <a href="" class="default_btn">Explore more</a>
+                    <a href="#form" class="default_btn">Daha Fazla Keşfet</a>
                   </div>
                 </div>
                 <div class="explore_card_middle">
                   <div class="explore_card_description">
                     <p>
-                      Antalya is the fastest-growing city in Turkey, and
-                      tourists from around the world are discovering its
-                      fabulous mix of great beaches and traditional Turkish
-                      culture. Kids will love the Beach Park, which features
-                      Aqua Land (a waterslide-fanatic's dream) and Dolphin Land
-                      (home to dolphins, sea lions and white whales). Make sure
-                      to explore the old town center and to see Hadrian's Gate.
+                      Antalya, Türkiye’nin en hızlı büyüyen şehri olup, dünyanın
+                      her yerinden gelen turistler harika plajları ve geleneksel
+                      Türk kültürünün eşsiz karışımını keşfetmektedir. Çocuklar
+                      için Aqua Land su kaydırakları ve Dolphin Land yunuslar,
+                      deniz aslanları ve beyaz balinalarla eğlenceli bir gün
+                      sunmaktadır.
                     </p>
                   </div>
                 </div>
                 <div class="explore_card_bottom">
                   <span
-                    ><img src="images/human.svg" alt="" /> 44.48 Mil
-                    People</span
+                    ><img src="images/human.svg" alt="" /> 44.48 Milyon
+                    İnsan</span
                   >
                   <span
                     ><img src="images/planet.svg" alt="" /> 275.400 km2</span
@@ -1071,35 +1041,32 @@
             </div>
             <div class="explore_card">
               <div class="explore_card_image">
-                <img src="images/sharm2.jpg.jpg" alt="" />
+                <img src="images/sharm-new2.webp" alt="" />
               </div>
               <div class="visit_card_title_btn">
                 <div class="explore_card_top">
                   <div class="explore_card_title_btn_tit">
-                    <h3>Sharm El-Sheikh</h3>
-                    <p>Egypt</p>
+                    <h3>Şarm El-Şeyh</h3>
+                    <p>Mısır</p>
                   </div>
                   <div class="explore_card_title_btn_btn">
-                    <a href="" class="default_btn">Explore more</a>
+                    <a href="#form" class="default_btn">Daha Fazla Keşfet</a>
                   </div>
                 </div>
                 <div class="explore_card_middle">
                   <div class="explore_card_description">
                     <p>
-                      Sharm El Sheikh is the center of tourism action in Sinai
-                      Peninsula and it has the world top diving sites. Specially
-                      the underwater wonders of Ras Mohammed national park that
-                      took Sharm city to whole different level. The city has
-                      diving and shipwreck sites that attract both advanced and
-                      recreational divers from around the world to discover the
-                      un parallel marine life deep down the red sea.
+                      Şarm El-Şeyh, Sina Yarımadası'nın turizm merkezidir ve
+                      dünyadaki en iyi dalış noktalarına ev sahipliği yapar. Ras
+                      Muhammed Milli Parkı, şehri dalış ve batık alanları ile
+                      ünlü hale getirmiştir.
                     </p>
                   </div>
                 </div>
                 <div class="explore_card_bottom">
                   <span
-                    ><img src="images/human.svg" alt="" /> 67.41 Mil
-                    People</span
+                    ><img src="images/human.svg" alt="" /> 67.41 Milyon
+                    İnsan</span
                   >
                   <span
                     ><img src="images/planet.svg" alt="" /> 551.500 km2</span
@@ -1115,29 +1082,27 @@
               <div class="explore_card_title_btn">
                 <div class="explore_card_top">
                   <div class="explore_card_title_btn_tit">
-                    <h3>Discover Exciting Air Travel Deals</h3>
-                    <p>Global Destinations</p>
+                    <h3>Havayolu Seyahat Tekliflerini Keşfet</h3>
+                    <p>Küresel Hedefler</p>
                   </div>
                   <div class="explore_card_title_btn_btn">
-                    <a href="" class="default_btn">Explore more</a>
+                    <a href="#form" class="default_btn">Daha Fazla Keşfet</a>
                   </div>
                 </div>
                 <div class="explore_card_middle">
                   <div class="explore_card_description">
                     <p>
-                      Embark on an airborne adventure and explore destinations
-                      worldwide. Whether it's the breathtaking landscapes,
-                      vibrant cities, or cultural treasures, our airline
-                      services provide a convenient and exhilarating way to
-                      navigate the globe. Immerse yourself in the richness of
-                      diverse cultures, all easily accessible through our
-                      extensive air travel network.
+                      Hava yolculuğuna çıkın ve dünya çapındaki yerleri
+                      keşfedin. Zengin kültürel hazineler, büyüleyici manzaralar
+                      ve canlı şehirler, havayolu hizmetlerimizle
+                      parmaklarınızın ucunda.
                     </p>
                   </div>
                 </div>
                 <div class="explore_card_bottom">
                   <span
-                    ><img src="images/human.svg" alt="" /> 8.66 Mil People</span
+                    ><img src="images/human.svg" alt="" /> 8.66 Milyon
+                    İnsan</span
                   >
                   <span><img src="images/planet.svg" alt="" /> 41.290 km2</span>
                   <span><img src="images/home.svg" alt="" /> $1.100.200</span>
@@ -1153,12 +1118,13 @@
       <div class="container">
         <div class="bestLocation">
           <div class="bestLocation_info">
-            <div class="bestLocation_info_title"><h2>Best Locations</h2></div>
+            <div class="bestLocation_info_title">
+              <h2>En İyi Lokasyonlar</h2>
+            </div>
             <div class="bestLocation_info_description">
               <p>
-                Discover the best offers in each city, curated just for you.
-                Immerse yourself in a world of savings and indulge in
-                unparalleled experiences.
+                Her şehirdeki en iyi fırsatları keşfedin, sizin için özenle
+                seçildi. Benzersiz deneyimlerle dolu bir dünyaya dalın.
               </p>
             </div>
           </div>
@@ -1166,28 +1132,28 @@
             <div class="options">
               <div class="option active">
                 <div class="option_image">
-                  <img src="images/dubai.jpg" alt="" />
+                  <img src="images/dubai-new2.jpg" alt="" />
                 </div>
                 <div class="location-info">
                   <div class="location-info-image">
                     <img src="images/location-icon.jpg" alt="" />
                     <div class="location-info-population">
                       <h3>Dubai</h3>
-                      <span>Population 2M</span>
+                      <span>Nüfus 2M</span>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="option">
                 <div class="option_image">
-                  <img src="images/antalya.jpg" alt="" />
+                  <img src="images/antalya-new2.webp" alt="" />
                 </div>
                 <div class="location-info">
                   <div class="location-info-image">
                     <img src="images/location-icon.jpg" alt="" />
                     <div class="location-info-population">
                       <h3>Antalya</h3>
-                      <span>Population 3.5M</span>
+                      <span>Nüfus 3.5M</span>
                     </div>
                   </div>
                 </div>
@@ -1200,36 +1166,36 @@
                   <div class="location-info-image">
                     <img src="images/location-icon.jpg" alt="" />
                     <div class="location-info-population">
-                      <h3>Istanbul</h3>
-                      <span>Population 4.1M</span>
+                      <h3>İstanbul</h3>
+                      <span>Nüfus 4.1M</span>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="option">
                 <div class="option_image">
-                  <img src="images/sharm.jpg" alt="" />
+                  <img src="images/sharm-new2.webp" alt="" />
                 </div>
                 <div class="location-info">
                   <div class="location-info-image">
                     <img src="images/location-icon.jpg" alt="" />
                     <div class="location-info-population">
-                      <h3>Sharm El-Sheikh</h3>
-                      <span>Population 4M</span>
+                      <h3>Şarm El-Şeyh</h3>
+                      <span>Nüfus 4M</span>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="option">
                 <div class="option_image">
-                  <img src="images/paris.jpg" alt="" />
+                  <img src="images/paris-new.webp" alt="" />
                 </div>
                 <div class="location-info">
                   <div class="location-info-image">
                     <img src="images/location-icon.jpg" alt="" />
                     <div class="location-info-population">
                       <h3>Paris</h3>
-                      <span>Population 3M</span>
+                      <span>Nüfus 3M</span>
                     </div>
                   </div>
                 </div>
@@ -1244,31 +1210,33 @@
       <div class="container">
         <div class="reservation-map">
           <div class="reservation-map-top">
-            <h4>Book Prefered Deal Here</h4>
-            <h2>Make Your Reservation</h2>
-            <a href="" class="default_btn">Discorver more</a>
+            <h4>Sevdiğiniz Fırsatları Burada Rezervasyon Yapın</h4>
+            <h2>Rezervasyonunuzu Gerçekleştirin</h2>
+            <a href="#form" class="default_btn">Daha Fazla Keşfet</a>
             <div class="reservation-map-top-cards">
               <div class="reservation-map-top-card">
                 <div class="card-icon">
                   <img src="images/phone-icon.svg" alt="" />
                 </div>
-                <div class="card-title"><h4>Make a Phone Call</h4></div>
-                <div class="card-adress">+998 99 299 17 98</div>
+                <div class="card-title"><h4>Telefonla Arayın</h4></div>
+                <div class="card-adress">+90 421 471 24 74</div>
               </div>
               <div class="reservation-map-top-card">
                 <div class="card-icon">
                   <img src="images/sms-icon.svg" alt="" />
                 </div>
-                <div class="card-title"><h4>Contact Us via Email</h4></div>
-                <div class="card-adress">zamonbiznestour@mail.ru</div>
+                <div class="card-title">
+                  <h4>E-posta ile İletişime Geçin</h4>
+                </div>
+                <div class="card-adress">info@seyahatruyasi.com</div>
               </div>
               <div class="reservation-map-top-card">
                 <div class="card-icon">
                   <img src="images/location-icon.svg" alt="" />
                 </div>
-                <div class="card-title"><h4>Visit Our Offices</h4></div>
+                <div class="card-title"><h4>Ofisimize Gelin</h4></div>
                 <div class="card-adress">
-                  15/25, Chilanzar - 9, Tashkent city
+                  Barbaros Bulvarı No: 23, Beşiktaş, İstanbul, Türkiye
                 </div>
               </div>
             </div>
@@ -1277,45 +1245,31 @@
       </div>
     </section>
 
-    <section>
+    <section id="form">
       <div class="container">
         <div class="reservation-form">
-          <div class="reservation-location">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3252.2562871331756!2d69.19966845675911!3d41.28903224846708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1schilonzor-9%20dom-25!5e1!3m2!1sen!2s!4v1705743542224!5m2!1sen!2s"
-              width="100%"
-              height="450px"
-              frameborder="0"
-              style="
-                border: 0;
-                border-top-left-radius: 23px;
-                border-top-right-radius: 23px;
-              "
-              allowfullscreen=""
-            ></iframe>
-          </div>
           <div class="reservation-form-title">
             <h2>
-              Make Your <span class="text-blue">Reservation</span> Through This
-              <span class="text-blue">Form</span>
+              Bu <span class="text-blue">Form</span> ile
+              <span class="text-blue">Rezervasyon</span> Yapın
             </h2>
           </div>
           <form action="">
             <div class="row">
-              <label for="name"
-                >Your name <br />
-                <input type="text" placeholder="Ex. John Smithee" />
+              <label for="name">
+                Adınız <br />
+                <input type="text" placeholder="Ör. Arda Mesut" />
               </label>
               <label for="numb">
-                Your Phone Number <br />
-                <input type="number" placeholder="Ex. +998999545542" />
+                Telefon Numaranız <br />
+                <input type="number" placeholder="Ör. +90 555 123 45 67" />
               </label>
             </div>
             <div class="row">
-              <label for="name"
-                >Number of Guests <br />
+              <label for="name">
+                Misafir Sayısı <br />
                 <select name="" id="">
-                  <option value="">Ex. 3 or 4 or 5</option>
+                  <option value="">Ör. 3 ya da 4</option>
                   <option value="">1</option>
                   <option value="">2</option>
                   <option value="">3</option>
@@ -1323,39 +1277,39 @@
                 </select>
               </label>
               <label for="numb">
-                Check in Data <br />
-                <input type="date" placeholder="дд.мм.гггг" />
+                Giriş Tarihi <br />
+                <input type="date" placeholder="gg.aa.yyyy" />
               </label>
             </div>
             <label for="">
-              Choose Your Destination <br />
+              Gideceğiniz Destinasyonu Seçin <br />
               <select name="" id="">
                 <option value="">Antalya</option>
-                <option value="">Istanul</option>
+                <option value="">İstanbul</option>
                 <option value="">Dubai</option>
-                <option value="">Sharm El-Sheikh</option>
-                <option value="">Kuala Lumpr</option>
-                <option value="">Canada</option>
-                <option value="">Sauid Arabia</option>
-                <option value="">England</option>
+                <option value="">Şarm El-Şeyh</option>
+                <option value="">Kuala Lumpur</option>
+                <option value="">Kanada</option>
+                <option value="">Suudi Arabistan</option>
+                <option value="">İngiltere</option>
               </select>
             </label>
             <label for="">
-              Choose Your Visa Support <br />
+              Vize Desteği Almak İstediğiniz Ülkeyi Seçin <br />
               <select name="" id="">
-                <option value="">Country</option>
-                <option value="">Japan</option>
-                <option value="">USA</option>
+                <option value="">Ülke</option>
+                <option value="">Japonya</option>
+                <option value="">ABD</option>
                 <option value="">Antalya</option>
                 <option value="">Dubai</option>
                 <option value="">Paris</option>
-                <option value="">Omon</option>
-                <option value="">Sauid Arabia</option>
-                <option value="">China</option>
+                <option value="">Umman</option>
+                <option value="">Suudi Arabistan</option>
+                <option value="">Çin</option>
                 <option value="">Hong Kong</option>
               </select>
             </label>
-            <a href="" class="default_btn">Make Your Reservation Now</a>
+            <a href="" class="default_btn">Şimdi Rezervasyon Yap</a>
           </form>
         </div>
       </div>
@@ -1366,15 +1320,15 @@
         <div class="footer">
           <div class="footer-top">
             <div class="footer-left">
-              <h2>Are You Looking To Travel ?</h2>
-              <span>Make A Reservation By Clicking The Button</span>
+              <h2>Seyahat Etmek İstiyor musunuz?</h2>
+              <span>Butona Tıklayarak Rezervasyon Yapın</span>
             </div>
             <div class="footer-right">
-              <a href="" class="default_btn">Book Yours Now</a>
+              <a href="" class="default_btn">Şimdi Rezervasyon Yapın</a>
             </div>
           </div>
           <div class="footer-bottom">
-            <h4>Copyright © 2024 Zamon Business Tour. All rights reserved</h4>
+            <h4>Copyright © 2024 Seyahat Rüyası Tour. Tüm Hakları Saklıdır</h4>
           </div>
         </div>
       </div>

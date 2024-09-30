@@ -98,6 +98,10 @@ a {
   gap: 35px;
 }
 
+.logo a {
+  font-size: 26px;
+}
+
 .user_actions {
   gap: 15px;
 }
@@ -107,7 +111,7 @@ a {
 #home {
   width: 100%;
   height: calc(100vh - 55px);
-  background-image: url(../images/backHome.jpg);
+  background-image: url(../images/hero-new.webp);
   background-repeat: no-repeat;
   object-fit: contain;
   background-size: 100% 100%;
@@ -395,6 +399,7 @@ a {
   justify-content: start;
   width: 100%;
   gap: 10px;
+  margin-left: 10px;
 }
 
 .first {
@@ -752,6 +757,10 @@ body .options .option {
   height: 758px;
   margin: 30px 0;
   position: relative;
+
+  h2 {
+    text-align: center;
+  }
 }
 
 .reservation-map-top {
@@ -862,6 +871,144 @@ body .options .option {
     width: 48%;
     color: #afafaf;
   }
+}
+
+// =============================
+// ============
+#accept_mobile_container {
+  height: calc(100vh - 55px);
+  display: none;
+  background-image: url('../images/accept-back.webp');
+}
+.accept {
+  width: 100%;
+  height: calc(100vh - 55px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  color: #fff;
+  top: 0;
+  gap: 70px;
+
+  font-size: 24px;
+  z-index: 30;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 55px);
+    background-color: #16212c83;
+    z-index: -1;
+  }
+}
+
+.cookie-consent-banner {
+  position: fixed;
+  bottom: 0;
+  width: 50%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  z-index: 9999;
+  display: none;
+}
+.cookie-consent-banner button {
+  background-color: #67c02c;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  cursor: pointer;
+  margin-left: 20px;
+}
+.accept_btns {
+  position: relative;
+  left: 0;
+  bottom: 18%;
+  z-index: 50;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.no_btn_accept {
+  width: 35%;
+  background-color: #0abab5;
+  font-weight: 600;
+}
+
+.yes_btn_accept {
+  width: 35%;
+  background-color: rgb(224, 44, 44);
+  font-weight: 600;
+}
+
+.mobile_content_btn {
+  color: #fff;
+  width: 150px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 16px;
+  a {
+    font-size: 16px;
+  }
+}
+
+.accept_title {
+  text-align: center;
+  margin-top: 150px;
+}
+.form_inner {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: space-between;
+
+  .checkText {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    font-size: 14px;
+    input {
+      width: 20px;
+      height: 20px;
+      margin-left: 6px;
+      margin-top: 6px;
+    }
+  }
+
+  .name_phone {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+  }
+
+  input {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid gray;
+    padding: 7px 10px;
+    color: #fff;
+    font-size: 18px;
+    display: flex;
+    gap: 20px;
+  }
+}
+
+.checkText span {
+  color: #000;
 }
 
 #footer {
@@ -995,6 +1142,16 @@ body .options .option {
     display: flex;
     justify-content: center;
   }
+
+  #accept_mobile_container {
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #cookieBanner {
+    display: none !important;
+  }
 }
 
 @media screen and (max-width: 580px) {
@@ -1080,6 +1237,29 @@ body .options .option {
   .footer-top {
     flex-direction: column;
     gap: 20px;
+  }
+
+  .nav_links {
+    a {
+      font-size: 16px;
+    }
+  }
+
+  p,
+  li {
+    font-size: 16px;
+  }
+
+  span {
+    font-size: 11px;
+  }
+
+  .slider_contents_top_description {
+    width: 100%;
+  }
+
+  .explore_card_title_btn_btn {
+    font-size: 8px;
   }
 }
 
